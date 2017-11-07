@@ -1,0 +1,56 @@
+html{}
+header{
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  border: 1px solid black
+}
+div, ul{
+  border: 1px solid black;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  width: 100%;
+  margin: 0 1.5rem;
+  border: 1px solid black;
+}
+nav div{
+  display: flex;
+  align-items: center;
+}
+nav li{
+  display: inline;
+  border: 1px solid black;
+}
+li .right{
+  padding-right: 1rem;
+}
+.banner-type-1{
+  display: flex;
+}
+.left-half{
+  width: 60%;
+  margin: 2rem 1.5rem;
+  border: 1px solid red;
+}
+.left-half img{
+  width: 100%;
+}
+.right-half{
+  display: flex;
+  width:25%;
+  pading: 0 auto;
+  margin: 2rem 1.5rem;
+  border: 1px solid red;
+}
+.right-half div{
+  display: flex;
+  
+  align-items: center;
+}
+.right-half h1 h3{
+  display: block;
+}
