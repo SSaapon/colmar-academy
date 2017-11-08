@@ -27,6 +27,14 @@ h3{
   margin: 1rem 0;
   line-height: 1.5rem;
 }
+h4{
+  font-size: 1.33rem;
+  color: RGB(218,165,32);
+  margin-bottom: .5rem;
+}
+h5{
+  padding: .5rem 0rem;
+}
 p{
   line-height: 1.5rem;
 }
@@ -70,6 +78,9 @@ li .right{
 .gray{
   background: RGB(30,30,30);
 }
+.light-gray{
+  background: RGB(215,215,215);
+}
 .left-half{
   width: 60%;
   margin: 2rem 1.5rem;
@@ -79,6 +90,7 @@ li .right{
   width: 100%;
 }
 .left-half h1{
+  text-align: left;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -111,13 +123,12 @@ li .right{
 .info-rectangles{
   width: 40%;
   margin-left: 1.5rem;
-  border: 1px solid black;
+  border-left: 1px solid RGB(30,30,30);
 }
 .rectangle{
   display: flex;
   align-content: center;
   margin: 1rem 1rem;
-  border: 1px solid black;
 }
 .rectangle img{
   width: 100%;
@@ -129,12 +140,49 @@ li .right{
   align-items: center;
   width: 35%;
   margin-right: 1rem;
-  border: 1px solid blue;
 }
 .info{
   display: flex;
   flex-flow: column;
   justify-content: center;
+  line-height: 0.5rem;
   width: 65%;
+}
+.link{
+  color: RGB(85,85,85);
+  font-style: italic;
+}
+.banner-type-2 h1{
+  text-align: center;
+  padding-top: 2rem;
+  color: RGB(30,30,30);
+}
+.courses{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  border: 1px solid red;
+}
+.box{
+  display: flex;
+  flex-flow: column;
+  width: 25%;
+  background-color: RGB(240,240,240);
+  margin: 2rem;
+  border: 1px solid red;
+}
+.box img{
+  width: 100%;
+  height: auto;
+}
+.box h4{
+  padding-top: 1rem;
+}
+.box-content{
+  padding: 1rem;
+}
+.thesis h1{
+  padding-top: 2rem;
+  margin: 0;
   border: 1px solid black;
 }
