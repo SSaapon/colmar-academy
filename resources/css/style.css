@@ -44,7 +44,6 @@ nav{
   justify-content: space-between;
   height: 4rem;
   margin: 0 1.5rem;
-  border: 1px solid black;
 }
 .logo-img{
   height: 2.5rem;
@@ -67,7 +66,6 @@ nav div{
 }
 nav li{
   display: inline;
-  border: 1px solid black;
 }
 li .right{
   padding-right: 1rem;
@@ -87,7 +85,6 @@ li .right{
 .left-half{
   width: 60%;
   margin: 2rem 1.5rem;
-  border: 1px solid red;
 }
 .left-half img{
   width: 100%;
@@ -109,7 +106,6 @@ li .right{
   flex-direction: column;
   justify-content: center;
   margin: 2rem 1.5rem;
-  border: 1px solid red;
 }
 .button{
   background-color: RGB(85,85,85);
@@ -179,7 +175,6 @@ li .right{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  border: 1px solid red;
 }
 .box{
   display: flex;
@@ -187,7 +182,6 @@ li .right{
   width: 25%;
   background-color: RGB(240,240,240);
   margin: 2rem;
-  border: 1px solid red;
 }
 .box img{
   width: 100%;
@@ -202,7 +196,6 @@ li .right{
 .thesis h1{
   padding-top: 2rem;
   margin: 0;
-  border: 1px solid black;
 }
 #no-bottom-margin{
   margin-bottom: 0rem;
@@ -255,7 +248,6 @@ nav{
     align-items: center;
     margin: 0rem;
     padding: 0rem;
-    border: 1px solid blue;
     width: 100%;
   }
   ul{
@@ -263,7 +255,6 @@ nav{
     justify-content:space-around;
     align-items: center;
     width: 100%;
-    border: 1px solid black;
     }
   .banner-type-1{
     display: block;
@@ -314,7 +305,6 @@ nav{
     height: auto;
     padding-bottom: 1rem;
     margin-right: 0rem;
-    border: 1px solid green;
   }
   .info{
     display: flex;
@@ -341,7 +331,6 @@ nav{
     padding-right: 1rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
-    border: 1px solid red;
   }
   .box-mobile{
       display: flex;
@@ -351,7 +340,6 @@ nav{
       padding-bottom: 1.5rem;
       padding-left: 1rem;
       margin-bottom: .5rem;
-      border: 1px solid red;
     }
     .mobile-end{
       margin-bottom: 0rem;
@@ -373,7 +361,6 @@ nav{
   padding-bottom: 1rem;
   padding-left: 1rem;
   margin: 0rem;
-  border: 1px solid blue;
 }
 footer div{
   width: 100%;
