@@ -34,16 +34,16 @@ h5{
 p{
   line-height: 1.5rem;
 }
-header{
-  justify-content: center;
-  align-content: center;
-}
-nav{
+.menu{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 4rem;
   margin: 0 1.5rem;
+}
+nav div{
+  display: flex;
+  align-items: center;
 }
 .logo-img{
   height: 2.5rem;
@@ -60,14 +60,14 @@ nav{
 .light{
   font-weight: 300;
 }
-nav div{
+ul{
   display: flex;
   align-items: center;
 }
 nav li{
   display: inline;
 }
-li .right{
+.right{
   padding-right: 1rem;
 }
 .banner-type-1{
@@ -213,7 +213,7 @@ li .right{
   align-items: left;
   line-height: 1.85rem;
 }
-nav{
+.footer-nav{
   display: flex;
   font-size: .85rem;
   align-items: flex-start;
@@ -236,6 +236,9 @@ nav{
   .boxes-mobile{
     display: none;
   }
+  .mobile-footer{
+    display:none;
+  }
 }
 @media only screen and (max-width: 760px){
 
@@ -244,13 +247,12 @@ nav{
   }
   .mobile-menu{
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0rem;
     padding: 0rem;
     width: 100%;
+    height: 4rem;
   }
-  ul{
+.mobile-menu ul{
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -354,17 +356,11 @@ video{
 .text,.thesis-rectangles{
   display: none;
 }
-nav{
+.mobile-footer{
   display: flex;
   font-size: .85rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   margin: 0rem;
-}
-footer div{
-  width: 100%;
-}
-footer ul{
-  display: none;
 }
