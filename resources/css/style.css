@@ -2,33 +2,29 @@ html{
   font-family: Raleway, san-serif;
   font-size: 16px;
 }
-body{
-  background-color: RGB(240,240,240);
-  color: RGB(30,30,30);
-
-}
-header{
-  display: flex;
-  background-color: RGB(240,240,240);
-  height: 4rem;
-  align-items: center;
-}
 h1{
   font-size: 2rem;
   font-weight: 600;
   color: RGB(218,165,32);
-  margin: 0.67rem 0;
   line-height: 2.3rem;
+}
+h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: RGB(30,30,30);
+  margin: 0.67rem 0;
+  line-height: 2rem;
 }
 h3{
   font-size: 1.17rem;
   font-weight: 500;
-  color: RGB(215,215,215);
+  color: RGB(218,165,32);
   margin: 1rem 0;
   line-height: 1.5rem;
 }
 h4{
   font-size: 1.33rem;
+  line-height: 1rem;
   color: RGB(218,165,32);
   margin-bottom: .5rem;
 }
@@ -38,17 +34,21 @@ h5{
 p{
   line-height: 1.5rem;
 }
+header{
+  justify-content: center;
+  align-content: center;
+}
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 2rem;
-  width: 100%;
+  height: 4rem;
   margin: 0 1.5rem;
   border: 1px solid black;
 }
 .logo-img{
   height: 2.5rem;
+  padding: 0rem;
 }
 .logo{
   font-family: Ubuntu;
@@ -76,10 +76,13 @@ li .right{
   display: flex;
 }
 .gray{
-  background: RGB(30,30,30);
+  background-color: RGB(30,30,30);
 }
 .light-gray{
-  background: RGB(215,215,215);
+  background-color: RGB(215,215,215);
+}
+.white{
+  background-color: RGB(240,240,240);
 }
 .left-half{
   width: 60%;
@@ -105,9 +108,6 @@ li .right{
   width:25%;
   flex-direction: column;
   justify-content: center;
-}
-.banner{
-  width: 25%;
   margin: 2rem 1.5rem;
   border: 1px solid red;
 }
@@ -121,14 +121,25 @@ li .right{
   margin-top: 1rem;
 }
 .info-rectangles{
+  display: flex;
+  justify-content: flex-start;
   width: 40%;
+  height: auto;
   margin-left: 1.5rem;
   border-left: 1px solid RGB(30,30,30);
+}
+.right-half,.info-rectangles{
+  margin-right: 0rem;
+  margin-bottom: 0rem;
 }
 .rectangle{
   display: flex;
   align-content: center;
-  margin: 1rem 1rem;
+  padding-left: 1rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: auto;
 }
 .rectangle img{
   width: 100%;
@@ -139,6 +150,7 @@ li .right{
   justify-content: center;
   align-items: center;
   width: 35%;
+  height: auto;
   margin-right: 1rem;
 }
 .info{
@@ -147,15 +159,21 @@ li .right{
   justify-content: center;
   line-height: 0.5rem;
   width: 65%;
+  height: auto;
+}
+.info p{
+  width: 95%;
 }
 .link{
   color: RGB(85,85,85);
   font-style: italic;
 }
-.banner-type-2 h1{
-  text-align: center;
+.dark{
+  display: flex;
+  justify-content: center;
   padding-top: 2rem;
   color: RGB(30,30,30);
+  width: 100%;
 }
 .courses{
   display: flex;
@@ -185,4 +203,181 @@ li .right{
   padding-top: 2rem;
   margin: 0;
   border: 1px solid black;
+}
+#no-bottom-margin{
+  margin-bottom: 0rem;
+}
+.thesis-rectangles{
+  width: 40%;
+  margin: 1.5rem;
+  justify-content: flex-start;
+}
+.right-half, .thesis-rectangles{
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+  }
+.thesis-info-header{
+  align-items: left;
+  line-height: 1.85rem;
+}
+nav{
+  display: flex;
+  font-size: .85rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+@media only screen and (max-width: 5000px) and (min-width: 760px ){
+  .mobile-menu{
+    display:none;
+  }
+  .info-rectangles-mobile{
+    display: none;
+  }
+  .bottom-mobile{
+    display: none;
+  }
+  .courses-mobile{
+    display:none;
+  }
+  .boxes-mobile{
+    display: none;
+  }
+}
+@media only screen and (max-width: 760px){
+
+  .menu{
+    display: none;
+  }
+  .mobile-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    padding: 0rem;
+    border: 1px solid blue;
+    width: 100%;
+  }
+  ul{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+    }
+  .banner-type-1{
+    display: block;
+  }
+  .banner-type-2{
+    background-color: RGB(255,255,255);
+  }
+  .left-half{
+    width: 100%;
+    margin: 0rem;
+  }
+  .right-half{
+    display: flex;
+    width: 100%;
+  }
+  .right-half, h1, h3{
+    width: 90%;
+  }
+  .button{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .second-banner .left-half{
+    display: none;
+  }
+  .right-half{
+    margin: 1rem;
+  }
+  .info-rectangles{
+    display: none;
+  }
+  .rectangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    width: 100%
+    height: auto;
+  }
+  .image{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    margin-right: 0rem;
+    border: 1px solid green;
+  }
+  .info{
+    display: flex;
+    justify-content: center;
+    line-height: 0.5rem;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  .bottom-mobile{
+    padding-bottom: 2rem;
+  }
+  .courses{
+    display: none;
+  }
+  .dark{
+    color: RGB(218,165,32);
+    background-color: RGB(255,255,255);
+    border-top: 1px solid RGB(215,215,215);
+    margin-bottom: 1rem;
+  }
+  .courses-mobile{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    border: 1px solid red;
+  }
+  .box-mobile{
+      display: flex;
+      flex-flow: column;
+      background-color: RGB(240,240,240);
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+      padding-left: 1rem;
+      margin-bottom: .5rem;
+      border: 1px solid red;
+    }
+    .mobile-end{
+      margin-bottom: 0rem;
+    }
+.thesis h1{
+  color: RGB(30,30,30);
+  padding-bottom: 1rem;
+}
+video{
+  margin-bottom: 1.5rem;
+}
+.text,.thesis-rectangles{
+  display: none;
+}
+nav{
+  display: flex;
+  font-size: .85rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin: 0rem;
+  border: 1px solid blue;
+}
+footer div{
+  width: 100%;
+}
+footer ul{
+  display: none;
 }
